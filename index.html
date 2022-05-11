@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+<img src="1000_F_413990886_hChS8igRgaOC4IlkIFIxiQ2EeW5U8LKf.jpg" alt="True" width="1350" height="350";
+<p> gaming is amazing so here is amazing games .</p>
+<body>
+<button>Mortal Kombat</button>
+<script>
+    var urlObj = new window.URL(window.location.href);
+    var url = "https://vaid21.github.io/GBA/launcher.html#mortal_kombat";
+
+    if (url) {
+        var win;
+
+        document.querySelector('button').onclick = function() {
+            if (win) {
+                win.focus();
+            } 
+            else {
+                win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = url;
+                win.document.body.appendChild(iframe);
+            }
+            document.querySelector('button').style.background='#ff5148';
+            document.querySelector('button').innerHTML="refresh the screen man";
+        };
+    }
+</script>
+<style>
+* {
+    color: black; 
+    font-family: arial;
+    text-align: center;
+}
+button {
+    width: 190px; 
+    height: 50px;
+    border-radius: 12px;
+    background-color: #604fe0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    transition: background-color 500ms;
+}
+button:hover {
+    background-color: #180cf5;
+}
+</style></body>
+<p> how to play the game</p>
+<p> use z to go back and use x to select and use te arrows keys to move and z x are use to fight. </p>
+<head> about the game </head>
+<p> Mortal Kombat is a tournament where fighters duel to a death match. A sorcerer from another world named Shang Tsung invites some of the world's best fighters to compete in the tournament, along with them comes characters such as Liu Kang, Johnny Cage and Sonya Blade.
+</p>
+<a href="subway surfers.html"> click the link to go next page.</a>
+</body>
+</html>
