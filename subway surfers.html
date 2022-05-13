@@ -1,0 +1,61 @@
+<html>
+<body>
+<img src="imags.jfif" alt="Trulli" width="500" height="333">
+<p> this is subway surfers on my website</p>
+<button>subways surfers</button>
+<script>
+    var urlObj = new window.URL(window.location.href);
+    var url = "https://yell0wsuit.github.io/html5-games/games/subway-surfers/";
+
+    if (url) {
+        var win;
+
+        document.querySelector('button').onclick = function() {
+            if (win) {
+                win.focus();
+            } 
+            else {
+                win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = url;
+                win.document.body.appendChild(iframe);
+            }
+            document.querySelector('button').style.background='#ff5148';
+            document.querySelector('button').innerHTML="refresh the screen man";
+        };
+    }
+</script>
+<style>
+* {
+    color: black; 
+    font-family: arial;
+    text-align: center;
+}
+button {
+    width: 190px; 
+    height: 50px;
+    border-radius: 12px;
+    background-color: #604fe0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    transition: background-color 500ms;
+}
+button:hover {
+    background-color: #180cf5;
+}
+</style></body>
+<p> how to play the game </p>
+<p> you use arrows keys to move and to jump and slide and space bar is to spawn your hoverborad</p>
+<head> about this game </head>
+<p> Subway Surfers is an endless runner video game. The game starts by tapping the touchscreen, while Jake (the game's starter character) or any other character sprays graffiti on a subway, and then gets caught in the act by the inspector and his dog, who starts chasing the character.</p>
+
+<a href="links.html"> go to the links page.</a>
+
+</body>
+</html>
